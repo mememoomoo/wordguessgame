@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>Jack R Larsen | Word Guess Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-auto">
-                <h1>Guess the Word and Live. Guess Wrong and Die.</h1>
+                <h1>Guess Our Name and Live. Guess Wrong and Die.</h1>
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-auto">
-                <h2></h2>
+                <h2 id="secretword"></h2>
             </div>
         </div>
     </div>
@@ -38,9 +38,10 @@
     <!--Footer (Wins/Losses)-->
     <div class="footer container fixed-bottom">
         <div class="row align-items-center">
-            <p class="col">Wins: <span class="wins"></span></p>
-            <p class="col">Letters Guessed: <span class="letters"></span></p>
-            <p class="col">Guesses Left: <span class="guesses"></span></p>
+            <p class="col">Wins: <span id="wins"></span></p>
+            <p class="col">Losses: <span id="losses"></span></p>
+            <p class="col">Letters Guessed: <span id="lettersguessed"></span></p>
+            <p class="col">Guesses Left: <span id="guesses"></span></p>
         </div>
     </div>
 
