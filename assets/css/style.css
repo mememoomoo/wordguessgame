@@ -1,0 +1,27 @@
+/* Body */
+body, html {
+    height: 100%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 16px;
+    color: #ffffff;
+}
+.background {
+    background-image: url("../Images/elti-meshau-2S2F2exmbhw-unsplash.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    padding: 15px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+.footer {
+    font-size: 2rem;
+}
