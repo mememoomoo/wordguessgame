@@ -8,6 +8,9 @@ var wins = 0;
 var losses = 0;
 var guessesRemaining = 5;
 
+
+// Random word //
+
 function Game() {
     random = words[Math.floor(Math.random() * words.length)];
     letters = random.split("");
@@ -16,11 +19,9 @@ function Game() {
         blanksCorrect.push("_");
     }
     document.getElementById("secretword").innerHTML = "  " + blanksCorrect.join("  ");
-    console.log(random);
-    console.log(letters)
-    console.log(blanks)
-    console.log(blanksCorrect)
 }
+
+// Reset back to normal //
 
 function reset() {
     guessesRemaining = 5;
@@ -29,6 +30,7 @@ function reset() {
     Game()
 }
 
+// Check if the letter is correct //
 function checkLetters(letter) {
     var letterInWord = false;
 
@@ -49,11 +51,10 @@ function checkLetters(letter) {
         wrongGuess.push(letter);
         guessesRemaining--;
     }
-    console.log(blanksCorrect);
 }
 
+// Add wins/losses //
 function complete() {
-    console.log("wins:" + wins + "| losses:" + losses + "| guesses left:" + guessesRemaining)
 
     if (letters.toString() == blanksCorrect.toString()) {
         wins++;
@@ -70,8 +71,10 @@ function complete() {
     document.getElementById("guesses").innerHTML = " " + guessesRemaining;
 }
 
+// Run Game //
 Game()
 
+// On Key Up Checks //
 document.onkeyup = function (event) {
     var guesses = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetters(guesses);
