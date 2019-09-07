@@ -22,6 +22,7 @@ h1 {
 h2 {
     font-size: 4rem;
     text-transform: capitalize;
+    height: 100%;
 }
 .footer {
     font-size: 2rem;
